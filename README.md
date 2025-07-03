@@ -3,19 +3,26 @@
 [API控制台](https://api.shipxy.com/v3/console/index)&nbsp;&nbsp;
 [在线开发文档](https://hiiau7lsqq.feishu.cn/wiki/E0wAwrPpvieGhSk5wLCctNqonVb)&nbsp;&nbsp;
 [github](https://github.com/shipxy-com/shipxy-api-npm)&nbsp;&nbsp;
+[gitee](https://gitee.com/shipxy-com/shipxy-api-npm)&nbsp;&nbsp;
 [NPM](https://www.npmjs.com/package/shipxy-api)
 
-## CommonJS 示例用法
+## 示例用法
 ```
-const { GetManyShip } = require('shipxy-api');
-
+// CommonJS
+const shipxy = require('shipxy-api'); 
+```
+```
+// ESM
+import shipxy from 'shipxy-api' 
+```
+```
 const key = "请从 API控制台 申请";
 
 async function GetManyShipFn() {
     let params = {
         key: key, mmsis: "413961925,477232800,477172700"
     }
-    let result = await GetManyShip(params)
+    let result = await shipxy.GetManyShip(params)
     console.log(result);
 }
 
