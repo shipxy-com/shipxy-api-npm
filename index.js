@@ -3,6 +3,7 @@
  * 作者：White
  */
 
+const baseMethod = require('./api/baseMethod'); // 1船舶查询
 const shipQuery = require('./api/shipQuery'); // 1船舶查询
 const portQuery = require('./api/portQuery'); // 2港口查询
 const historyAction = require('./api/historyAction'); // 3历史行为
@@ -12,6 +13,7 @@ const weather = require('./api/weather'); // 6气象天气
 const warning = require('./api/warning'); // 8海事数据
 
 module.exports = {
+    ...baseMethod,
     ...shipQuery,
     ...portQuery,
     ...historyAction,

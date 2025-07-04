@@ -2,13 +2,31 @@ const shipxy = require('../index');
 
 const key = "484db43a65ec4f87b5b4dcc69e586bf7";
 
-test('SearchShip', async () => {
-  let params = {
-    key: key, keywords: "coco", max: 2
-  }
-  let result = await shipxy.SearchShip(params)
-  console.log(result);
-});
+// test('getMethod', async () => {
+//   let params = {
+//     key: key, keywords: "coco", max: 2
+//   }
+//   let result = await shipxy.getMethod("SearchShip", params)
+//   console.log(result);
+// });
+
+// test('postMethod', async () => {
+//   let params = {
+//     key: key, keywords: "coco", max: 2
+//   }
+//   let result = await shipxy.postMethod("SearchShip", params)
+//   console.log(result);
+// });
+
+
+
+// test('SearchShip', async () => {
+//   let params = {
+//     key: key, keywords: "coco", max: 2
+//   }
+//   let result = await shipxy.SearchShip(params)
+//   console.log(result);
+// });
 
 // test('GetSingleShip', async () => {
 //   let params = {
